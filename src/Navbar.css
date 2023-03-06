@@ -1,0 +1,77 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.navbar{
+    display: flex;
+    height: 10vh;
+    /* border: 1px solid black; */
+    
+    /* align-items: center; */
+    justify-content: center;
+    /* margin: 2.5vw; */
+    background-color: #ff0000;
+    box-sizing: border-box;
+
+}
+.abovenavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(0, 98, 255); */
+}
+.name_container{
+    margin-left: 10vw;
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+    /* text-align: center; */
+}
+.company_name{
+    /* border: 1px solid black; */
+    color: rgb(0, 98, 255);
+    font-size: xx-large;
+    font-weight: 700;
+}
+.subscript{
+    padding-left: 40px;
+}
+
+.small{
+    font-size: medium;
+    color: black;
+}
+
+.unordered_list{
+    display: flex;
+    list-style: none;
+}
+.list_items{
+    margin-left:4vw ;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.button2{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: medium;
+    border-radius: 0.5vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.button2:hover{
+    /* background-color: rgba(0,0,0,0.5); */
+    background-color:rgba(255,255,255,0.2);
+    transition:all 0.2s;
+}
+img{
+    width: 100px;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+    color: black;
+}

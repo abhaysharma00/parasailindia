@@ -1,0 +1,9 @@
+.Banner{
+    display: flex;
+}
+.common{
+    width: 50vw;
+    height: 60vh;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
