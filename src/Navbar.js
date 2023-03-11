@@ -32,7 +32,7 @@ function Navbar() {
             <Link to="/accessories">Parasail Accessories</Link>
           </button>
           <button className="list_items button2">
-            <Link to="/otherproducts">Other products</Link>
+            <Link to="/hotairballon">Other products</Link>
           </button>
           <button className="list_items button2">
             <Link to="/gallery">Gallery</Link>

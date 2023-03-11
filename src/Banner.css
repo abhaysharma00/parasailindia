@@ -1,8 +1,9 @@
 .Banner{
     display: flex;
+    justify-content: space-around;
 }
 .common{
-    width: 50vw;
+    width: 30vw;
     height: 60vh;
     box-sizing: border-box;
     border: 1px solid black;

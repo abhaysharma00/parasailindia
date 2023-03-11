@@ -1,26 +1,36 @@
+// imports
 import "./App.css";
 import Navbar from "./Navbar";
 import VideoPlayer from "./VideoPlayer";
 import Banner from "./Banner";
 import Footer from "./Footer";
+import Parasail from "./Parasail";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
   Contact,
   About,
-  Parasail,
   Accessories,
   OtherProducts,
   Gallery,
   Events,
+  Hotairballon,
 } from "./utils";
+
+//
+const data = [
+  [
+    { url: "parasail", name: "parasail" },
+    { url: "parasail", name: "parasail" },
+    { url: "parasail", name: "parasail" },
+  ],
+];
 function Temp() {
   return (
     <div>
       <VideoPlayer />
-      <Banner />
-      <Banner />
-      <Banner />
-      <Banner />
+      {data.map((val) => {
+        <Banner data={val} />;
+      })}
       <Footer />
     </div>
   );
@@ -40,6 +50,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/hotairballon" element={<Hotairballon />} />
         </Routes>
       </BrowserRouter>
     </div>

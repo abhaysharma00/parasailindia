@@ -1,33 +1,50 @@
 import React from "react";
+import "./utils.css";
+import Container from "./Container";
+//
+function Accessories() {
+  return (
+    <>
+      <Container />
+      <Container />
+      <Container />
+    </>
+  );
+}
 
+//
 function Contact() {
-  return <div>Contact</div>;
+  return <div className="center">Contact</div>;
 }
 function About() {
-  return <div>About</div>;
+  return <div className="center">About</div>;
 }
-function Parasail() {
-  return <div>Parasail</div>;
-}
-function Accessories() {
-  return <div>Parasail Accessories</div>;
-}
+
 function OtherProducts() {
-  return <div>OtherProducts</div>;
+  return <div className="center">OtherProducts</div>;
 }
 function Gallery() {
-  return <div>Gallery</div>;
+  return <div className="center">Gallery</div>;
 }
 function Events() {
-  return <div>Events</div>;
+  return <div className="center">Events</div>;
+}
+function Hotairballon() {
+  return (
+    <>
+      <Container />
+      <Container />
+      <Container />
+    </>
+  );
 }
 
 export {
   Contact,
   About,
-  Parasail,
   Accessories,
   OtherProducts,
   Gallery,
   Events,
+  Hotairballon,
 };
