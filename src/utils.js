@@ -5,9 +5,10 @@ import Container from "./Container";
 function Accessories() {
   return (
     <>
+      accessories
+      {/* <Container />
       <Container />
-      <Container />
-      <Container />
+      <Container /> */}
     </>
   );
 }
@@ -20,9 +21,6 @@ function About() {
   return <div className="center">About</div>;
 }
 
-function OtherProducts() {
-  return <div className="center">OtherProducts</div>;
-}
 function Gallery() {
   return <div className="center">Gallery</div>;
 }
@@ -32,19 +30,12 @@ function Events() {
 function Hotairballon() {
   return (
     <>
+      Hotairballon
+      {/* <Container />
       <Container />
-      <Container />
-      <Container />
+      <Container /> */}
     </>
   );
 }
 
-export {
-  Contact,
-  About,
-  Accessories,
-  OtherProducts,
-  Gallery,
-  Events,
-  Hotairballon,
-};
+export { Contact, About, Accessories, Gallery, Events, Hotairballon };

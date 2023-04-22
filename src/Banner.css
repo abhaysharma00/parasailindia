@@ -1,10 +1,34 @@
 .Banner{
     display: flex;
     justify-content: space-around;
+    height: fit-content;
+    /* border: 1px solid black; */
+    margin: 20px;
+    width: 80vw;
+    /* width: fit-content; */
 }
 .common{
-    width: 30vw;
-    height: 60vh;
+    /* width: 30vw; */
+    /* height: 60vh; */
+    /* margin: auto; */
+    height: fit-content;
+    width: fit-content;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+.common > img{
+    /* height: 40vw; */
+    width: 20vw; 
+}
+.common:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+.common:hover{
+    transform: scale(1.09);
+    opacity: 1;
 }

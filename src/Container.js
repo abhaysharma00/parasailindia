@@ -1,11 +1,11 @@
 import React from "react";
 import "./Container.css";
-function Container() {
+function Container({ data }) {
   return (
     <div className="box">
-      <div className="container"></div>
-      <div className="container"></div>
-      <div className="container"></div>
+      <div className="container">{data[0].name}</div>
+      <div className="container">{data[0].name}</div>
+      <div className="container">{data[0].name}</div>
     </div>
   );
 }

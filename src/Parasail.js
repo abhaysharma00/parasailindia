@@ -1,80 +1,53 @@
 import React from "react";
-import parasail_data from "./data/parasail.js";
-import "./Parasail.css";
+import {
+  parasailData1,
+  parasailData2,
+  parasailData3,
+} from "./data/parasail.js";
+
+// import "./Parasail.css";
+import VideoPlayer from "./VideoPlayer.js";
+
 function Container({ data }) {
   return (
-    <div className="center">
-      {
-        <div className="parasail_container">
-          <div className="parasail_info">
-            <p>
-              <b> Parasail_Model </b> :{data.Parasail_Model}
-            </p>
-            <p>
-              <b>Parasail_Canopy</b>
-              {data.Parasail_Canopy}
-            </p>
-            <p>
-              <b> Colour </b>
-              {data.Colour}
-            </p>
-            <p>
-              <b> Load</b>
-              {data.Load}
-            </p>
-            <p>
-              <b> Fabric </b>
-              {data.Fabric}
-            </p>
-            <p>
-              <b> Yoke_Attach </b>
-              {data.Yoke_Attach}
-            </p>
-            <p>
-              <b> Hardware </b>
-              {data.Hardware}
-            </p>
-            <p>
-              <b> Tow_Rope_Type </b>
-              {data.Tow_Rope_Type}
-            </p>
-            <p>
-              <b>Tow_Rope_Length </b>
-              {data.Tow_Rope_Length}
-            </p>
-            <p>
-              <b> Harness_Type </b>
-              {data.Harness_Type}
-            </p>
-            <p>
-              <b> Carry_Bag_Material </b>
-              {data.Carry_Bag_Material}
-            </p>
-            <p>
-              <b> Carabineer_Type</b>
-              {data.Carabineer_Type}
-            </p>
+    <>
+      <div className="center">
+        <div className="Banner">
+          <div className=" common ">
+            <img src={`${data[0].img}`} alt="" />
+            <p>{data[0].Parasail_Model}</p>
+            <p>{data[0].Feet}</p>
+            <p>{data[0].Wind_Speed}</p>
+            <p>{data[0].Weight}</p>
           </div>
-          <div className="parasail_image">
-            <img
-              src="./images/parasail/falcon 24feet.jpeg"
-              alt="falcon 24feet"
-            />
+          <div className=" common ">
+            <img src={`${data[1].img}`} alt="" />
+            <p>{data[1].Parasail_Model}</p>
+            <p>{data[1].Feet}</p>
+            <p>{data[1].Wind_Speed}</p>
+            <p>{data[1].Weight}</p>
+          </div>
+          <div className=" common ">
+            <img src={`${data[2].img}`} alt="" />
+            <p>{data[2].Parasail_Model}</p>
+            <p>{data[2].Feet}</p>
+            <p>{data[2].Wind_Speed}</p>
+            <p>{data[2].Weight}</p>
           </div>
         </div>
-      }
-    </div>
+      </div>
+    </>
   );
 }
 function Parasail() {
   return (
-    <div>
-      {parasail_data.map((data) => (
-        <>
-          <Container data={data} />
-        </>
-      ))}
-    </div>
+    <>
+      <VideoPlayer />
+      <h2>description</h2>
+      <Container data={parasailData1} />
+      <Container data={parasailData2} />
+      <Container data={parasailData3} />
+    </>
   );
 }
 
